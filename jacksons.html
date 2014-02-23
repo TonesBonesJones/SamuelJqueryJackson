@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Click to Make Samuel L Disappear!</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("img").click(function(){ 
+				$(this).fadeOut();
+			});
+			$("button").click(function(){
+				$("img").fadeIn();
+			});
+				
+		});	
+		
+	</script>
+	<link rel="stylesheet" type="text/css" href="jacksons.css">
+</head>
+<body>
+	<div id="top">
+		<img class="one" src="jackson.jpg" alt="bamf"> 
+		<img class="two" src="jackson.jpg" alt="bamf">
+		<img class="three" src="jackson.jpg" alt="bamf">
+		<img class="four" src="jackson.jpg" alt="bamf">
+	</div>
+	<div id="bot">	
+		<img class="five" src="jackson.jpg" alt="bamf">
+		<img class="six" src="jackson.jpg" alt="bamf">
+		<img class="seven" src="jackson.jpg" alt="bamf">
+		<img class="eight" src="jackson.jpg" alt="bamf">
+	</div>	
+	<button>Restore</button>
+</body>
+</html>
